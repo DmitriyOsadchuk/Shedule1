@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+        </div>
+        <div class="row">
+                <div class="form_generate">
+                    <form action="#">
+                        <div class="form-group">
+                            <label class="label" for="number">Enter the number of trains from 1 to 20:</label>
+                            <input  type="text" id="number" class="form-control" name="number_of_train" placeholder="Enter number">
+                        </div>
+                        <button id="getScedule" type="button" class="btn btn-success" onclick="validNumber()">Generate</button>
+                        <button id="Clear" type="button"  class="btn btn-danger" onclick="clearSchedule()">Clear</button>
+                        <button id="myButton" type="button" class="btn btn-primary">Download</button>
+                    </form>
+                </div>
+                <table id="scedule" class="table table-bordered table-dark table-hover table_sort">
+                    <thead>
+                    <tr>
+
+                        <th scope="col">Train number</th>
+                        <th scope="col">Departure city</th>
+                        <th scope="col">Destination city</th>
+                        <th scope="col">Departure day</th>
+                        <th scope="col">Departure time</th>
+                        <th scope="col">Distance</th>
+                        <th scope="col">Speed</th>
+                        <th scope="col">Driving time</th>
+                        <th scope="col">Arrival time</th>
+                        <th scope="col">Ticket price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+        </div>
+    </div>
+</section>
+
+
+<script type="application/javascript" src="script.js"></script>
+</body>
+</html>

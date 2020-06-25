@@ -1,0 +1,25 @@
+body {
+    background-image: url("./image/claudio-schwarz-purzlbaum-294j9hG1N3w-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form_generate {
+    margin-bottom: 15px;
+}
+
+.label {
+    color: #ffffff;
+    font-size: 14px;
+}
+#txt {
+    color: #ffffff;
+    position: absolute;
+}
+.clock {
+    border-radius: 15px;
+    color: #000000;
+    font-size: 60px;
+    font-family: Orbitron;
+    font-weight: 600;
+}
